@@ -14,4 +14,13 @@
     <%= post.body %>
   </p>
 
+  <br>
+
+  <strong>Comments</strong>
+  <% post.comments.each do |comment| %>
+    <p>
+      <strong><%= comment.user.name %>:</strong>
+      <%= comment.body %>
+    </p>
+  <% end %>
 </div>
